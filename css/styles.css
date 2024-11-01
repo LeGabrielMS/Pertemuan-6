@@ -1,0 +1,64 @@
+/* General Body Styles */
+body {
+    background-color: #f4f4f9;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: #d32f2f;
+    transition: background-color 0.3s ease;
+}
+
+/* Main Content Styling */
+.card-header h2,
+.card-header h4 {
+    font-weight: bold;
+}
+
+/* Styling for Header and Navigation */
+nav {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Style Text Main Article */
+.written-by,
+.tags-label {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+}
+
+/* Sidebar Links Hover Effect */
+.list-group-item a:hover {
+    color: #ff5722;
+    transition: color 0.3s ease;
+}
+
+/* Links within Article */
+.main-content a,
+.card-body a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content a:hover,
+.card-body a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}
+
+/* Centering Layout */
+.container {
+    max-width: 960px;
+}
