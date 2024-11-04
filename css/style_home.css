@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0c4de;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #d2232a;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+nav {
+    background-color: #d2232a;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.articles {
+    flex: 3;
+}
+
+.article {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.article h2 {
+    background-color: #3ba83b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article h2 .comment {
+    background-color: olive;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: normal;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+/* tombol */
+.button-article {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-left: 78%;
+    width: 170px;
+    background-color: #d2232a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efek tombol */
+.button-article:hover {
+    transform: translateY(-3px);
+    /* Tombol bergerak ke atas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Efek bayangan */
+    background-color: #b71f24;
+    /* Warna background berubah saat di-hover */
+}
+
+.button-article:active {
+    transform: translateY(1px);
+    /* Efek ketika tombol ditekan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* side bar bagian atas */
+.sidebar-box {
+    background-color: #e0e0e0;
+    /* Warna latar sidebar */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.bordered-description {
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bordered-description:hover {
+    color: #b71f24;
+}
+
+.bordered-number-ig {
+    background-color: #f5228f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.bordered-number-rss {
+    background-color: hsl(24, 91%, 55%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*Sidebar kelompok*/
+.kelompok {
+    padding: 5px;
+    border-radius: 8px;
+    list-style-type: none;
+    /* menghilangkan bullet pada list */
+}
+
+.kelompok li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.kelompok li:hover {
+    color: #b71f24;
+    transform: translateY(-3px);
+}
+
+.profile-pic {
+    width: 40px;
+    /* Equal width */
+    height: 40px;
+    /* Equal height */
+    border-radius: 50%;
+    /* Creates circular shape */
+    margin-right: 10px;
+    /* Space between image and adjacent elements */
+    object-fit: cover;
+    /* Ensures the image fills the circle without distortion */
+    object-position: center;
+    /* Centers the image within the circle */
+}
+
+/* Removes the default link styling */
+a {
+    color: inherit;
+    /* Makes link color inherit from surrounding text */
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+/* Add custom styles for hover, focus, and active states if desired */
+a:hover,
+a:focus,
+a:active {
+    color: #23d2be;
+    /* Changes color on hover, focus, or active */
+    text-decoration: underline;
+    /* Adds underline back on hover */
+}
+
+.sidebar-box h3 {
+    background-color: #3ba83b;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.sidebar-box p,
+.sidebar-box ul {
+    margin: 10px 0;
+}
+
+.sidebar-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.footer-box h3 {
+    background-color: #3ba83b;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.footer-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 10px;
+}
+
+.footer-box ul li {
+    margin: 5px 0;
+    padding: 1px;
+}
+
+.text {
+    cursor: default;
+    text-align: justify;
+    /* Kursor tidak perlu pointer di level ul */
+}
+
+.text li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Menambahkan transisi agar warna berubah secara halus */
+}
+
+.text li:hover {
+    color: #b71f24;
+    /* Warna teks berubah saat item li di-hover */
+}
+
+.text-copyright {
+    line-height: 1.6;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tags {
+    color: #d2232a;
+}
