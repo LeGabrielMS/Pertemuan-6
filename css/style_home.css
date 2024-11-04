@@ -302,3 +302,13 @@ footer {
 .tags {
     color: #d2232a;
 }
+
+.tags:hover,
+.tags:focus,
+.tags:active {
+    color: #23d2be;
+    
+    /* Changes color on hover, focus, or active */
+    text-decoration: underline;
+    /* Adds underline back on hover */
+}
